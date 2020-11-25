@@ -12,3 +12,9 @@ A simple animated webpage of the London Skyline.
 7. Add time and season display in corner
 8. (Optional) Pull weather data for London -> Animate rain, snow, etc. based on weather data
 9. (Optional) Sun Dial Clock? -> Moving shadow
+
+### Useful Guides:
+- https://codepen.io/marijoha/full/xRgqKG/
+- https://github.com/animate-css/animate.css
+- https://github.com/joerez/woah.css
+- https://github.com/yesiamrocks/cssanimation.io
