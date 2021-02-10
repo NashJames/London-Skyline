@@ -15,6 +15,7 @@ A simple animated webpage of the London Skyline.
 
 ### Useful Guides:
 - https://codepen.io/marijoha/full/xRgqKG/
+- https://1stwebdesigner.com/16-impressive-svg-animations/
 - https://github.com/animate-css/animate.css
 - https://github.com/joerez/woah.css
 - https://github.com/yesiamrocks/cssanimation.io
