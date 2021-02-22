@@ -1,8 +1,23 @@
-body {
-  background-color: rgb(33, 33, 33);
-  background-image: url("london-skyline.svg");
-  background-size: cover;
+#Sky_Details {
+    position: relative;
 }
+
+.Cloud {
+    position: absolute;
+    left: -100px;
+    animation: cloudFloat 10s linear infinite; 
+}
+
+@keyframes cloudFloat {
+    from {left: -100px;}
+    to {left: 2000px;}
+}
+
+// body {
+//   background-color: rgb(33, 33, 33);
+//   background-image: url("london-skyline.svg");
+//   background-size: cover;
+// }
 
 // .App {
 //   text-align: center;
