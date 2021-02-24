@@ -1,16 +1,23 @@
-#Sky_Details {
-    position: relative;
-}
+// #Sky_Details {
+//     position: relative;
+// }
 
 .Cloud {
     position: absolute;
-    left: -100px;
-    animation: cloudFloat 10s linear infinite; 
+    // left: 0;
+    animation: cloudFloat 30s linear infinite; //20 SECS
 }
 
+.C1, .C2 { animation-duration: 35s; }//25 SECS
+
+.C1 { animation-delay: 3s; } //2 SECS
+.C2 { animation-delay: 16s; } //10 SECS
+.C4 { animation-delay: 18s; } //11 SECS
+.C5 { animation-delay: 8s; } //6 SECS
+
 @keyframes cloudFloat {
-    from {left: -100px;}
-    to {left: 2000px;}
+    from {transform: translateX(0);}
+    to {transform: translateX(2500px);}
 }
 
 // body {
