@@ -1,19 +1,14 @@
-// #Sky_Details {
-//     position: relative;
-// }
-
 .Cloud {
     position: absolute;
-    // left: 0;
-    animation: cloudFloat 30s linear infinite; //20 SECS
+    animation: cloudFloat 30s linear infinite; //30 SECS
 }
 
-.C1, .C2 { animation-duration: 35s; }//25 SECS
+.C1, .C2 { animation-duration: 35s; } //35 SECS
 
-.C1 { animation-delay: 3s; } //2 SECS
-.C2 { animation-delay: 16s; } //10 SECS
-.C4 { animation-delay: 18s; } //11 SECS
-.C5 { animation-delay: 8s; } //6 SECS
+.C1 { animation-delay: 3s; } //3 SECS
+.C2 { animation-delay: 16s; } //16 SECS
+.C4 { animation-delay: 18s; } //18 SECS
+.C5 { animation-delay: 8s; } //8 SECS
 
 @keyframes cloudFloat {
     from {transform: translateX(0);}
@@ -24,43 +19,4 @@
 //   background-color: rgb(33, 33, 33);
 //   background-image: url("london-skyline.svg");
 //   background-size: cover;
-// }
-
-// .App {
-//   text-align: center;
-// }
-
-// .App-logo {
-//   height: 40vmin;
-//   pointer-events: none;
-// }
-
-// @media (prefers-reduced-motion: no-preference) {
-//   .App-logo {
-//     animation: App-logo-spin infinite 20s linear;
-//   }
-// }
-
-// .App-header {
-//   background-color: #282c34;
-//   min-height: 100vh;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   justify-content: center;
-//   font-size: calc(10px + 2vmin);
-//   color: white;
-// }
-
-// .App-link {
-//   color: #61dafb;
-// }
-
-// @keyframes App-logo-spin {
-//   from {
-//     transform: rotate(0deg);
-//   }
-//   to {
-//     transform: rotate(360deg);
-//   }
 // }
