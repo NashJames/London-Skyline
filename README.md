@@ -13,6 +13,10 @@ A simple animated webpage of the London Skyline.
 8. (Optional) Pull weather data for London -> Animate rain, snow, etc. based on weather data
 9. (Optional) Sun Dial Clock? -> Moving shadow
 
+Useful graphic for svg placement
+https://medium.com/better-programming/react-best-way-of-importing-svg-the-how-and-why-f7c968272dd9
+https://miro.medium.com/max/875/1*YRtXfVLMzsUra4c8MVtQOQ.png
+
 ### Useful Tools:
 - [Create React App](https://create-react-app.dev/) for quick, simple web app
 - [Vectr](https://vectr.com/) for creating simple svg's

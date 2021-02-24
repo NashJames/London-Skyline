@@ -1,0 +1,22 @@
+.Cloud {
+    position: absolute;
+    animation: cloudFloat 30s linear infinite; //30 SECS
+}
+
+.C1, .C2 { animation-duration: 35s; } //35 SECS
+
+.C1 { animation-delay: 3s; } //3 SECS
+.C2 { animation-delay: 16s; } //16 SECS
+.C4 { animation-delay: 18s; } //18 SECS
+.C5 { animation-delay: 8s; } //8 SECS
+
+@keyframes cloudFloat {
+    from {transform: translateX(0);}
+    to {transform: translateX(2500px);}
+}
+
+// body {
+//   background-color: rgb(33, 33, 33);
+//   background-image: url("london-skyline.svg");
+//   background-size: cover;
+// }
