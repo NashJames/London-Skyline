@@ -3,26 +3,53 @@
 A simple animated webpage of the London Skyline.
 
 ### Steps:
-1. Simple web app
-2. Create some svg's (London, clouds, sun/moon,...)
-3. Animate clouds left-to-right
-4. Animate sun/moon rotation
-5. Animate sky colour change rotation
-6. Animation options panel: 50x speed (default), 10x speed, 1x speed, pause/play, reset to clock time
-7. Add time and season display to corner panel
-8. (Optional) Pull weather data for London -> Animate rain, snow, etc. based on weather data
-9. (Optional) Sun Dial Clock? -> Moving shadow
+- [x] Create SVG using Illustration software
+- [x] Simple Create-React-App
+- [x] Decide on implementation for SVG (e.g. Inline SVG, HTML Object, PNG Image)
+    - HTML object was the obvious choice for an SVG of this size. The image below provides a rounded list of the benefits of each.
+- [x] Decide on animation type (e.g. CSS, SMIL, JS, CSS/JS Library)
+    - Given our SVG was an object. CSS was the most appropriate
+    - A library seemed unnecessary for what we had planned
+- [x] Animate clouds
+    - This involved a rather simple implementation of `transform: translateX()` on an infinite loop
+- [x] Animate Lights, Shadow and Background
+    - These were done by manipulating the `opacity` of the elements, back and forth in a Day/Night cycle
+- [ ] Animate Clock Hands
+    - A problem occurred where the rotation of these elements was around (0,0). 3 differing solutions were attempted, detailed here: [Adjustments.svg](SVG%20backups/Adjustments.svg)
+    - In the end, a combination of total project time, full time job commitment and planned projects led me to a quick decision to move forward. I am certain the solution is simple; but balance of time takes precedence.
+- [x] Refactor code
+    - This was done at each step. It's highly discouraged to put this off until the end
 
-Useful graphic for svg placement
-https://medium.com/better-programming/react-best-way-of-importing-svg-the-how-and-why-f7c968272dd9
-https://miro.medium.com/max/875/1*YRtXfVLMzsUra4c8MVtQOQ.png
+<p align="center">
+<img src="https://miro.medium.com/max/875/1*YRtXfVLMzsUra4c8MVtQOQ.png" alt="https://medium.com/better-programming/react-best-way-of-importing-svg-the-how-and-why-f7c968272dd9" height=200>
+</p>
+
+### Useful Illustrator Functions:
+I recommend following the 'Illustrator Get Started course' found [here](https://helpx.adobe.com/illustrator/tutorials.html) 
+- Pattern Fill: Responsible for the railings and bricks of Tower Bridge
+- Shape Builder Tool/Compound Paths: Great tools for joining shapes together
+- Scatter Brush + Curvature Tool: Used to easily create the randomised spread of leaves on the trees from a single path and leaf shape
+- Clipping Mask: Masks an artwork so it's only visible in the shape of the object. Used to curve the British Flag on the Tower of London.
+- Gradients: Used to create the gold colours, glow of the sun/moon, Big Ben spotlight, etc.
+- Drop Shadows: The core attribute of 3D art. Adding shadow brings life to the art
+- Outer glow: Creates the effect of the light coming from a source (e.g. windows)
 
 ### Useful Tools:
 - [Create React App](https://create-react-app.dev/) for quick, simple web app
-- [Vectr](https://vectr.com/) for creating simple svg's
+- [Adobe Illustrator](https://www.adobe.com/uk/products/illustrator.html) - £££ SVG Editor
+- [Excalidraw](https://excalidraw.com/) - Free Virtual Whiteboard/SVG Editor
+- [Vectr](https://vectr.com/)- Free SVG Editor
+- [SVGOMG](https://jakearchibald.github.io/svgomg/) for optimising SVGs
+- [svg2jsx](https://svg2jsx.com/) for converting SVGs to jsx compatible format (size limit)
 
-### Inspiration/Guides:
-- https://codepen.io/marijoha/full/xRgqKG/
+### Animation Libraries:
+- https://snapsvg.io/docs/
 - https://github.com/animate-css/animate.css
 - https://github.com/joerez/woah.css
 - https://github.com/yesiamrocks/cssanimation.io
+
+### Inspiration:
+- https://codepen.io/marijoha/full/xRgqKG/
+- https://images.vexels.com/media/users/3/78755/raw/b04c23d75fba18d9d4001b0ed2718f00-london-city-skyline.jpg
+- https://free-images.com/or/c456/london_skyline_svg.jpg
+- https://tse1.mm.bing.net/th?id=OIP.yaC6jKI9ei3QJH8E6RzzkwHaE7&pid=Api
