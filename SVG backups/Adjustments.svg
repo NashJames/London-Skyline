@@ -20,6 +20,7 @@
 </g>
 
 <!-- Clock Hands -->
+<!--
  - More condensed version
  - To replace the final path, and final 3 polygon's in id="Big_Ben"
  - Rotation works in relation to the entire svg. Causing the clock hands to rotate around (0, 0).
@@ -27,6 +28,7 @@
     - Adding a grouped invisible circle, and rotating that (to give it a natural centre point)
     - Rotating around a point {transform: rotate(360deg, 686.7612px, 414.6018px);}
     - Inner-SVG: Placing the clock hands as their own SVG element inside the larger one
+-->
 
 <svg id="Clock_Hands" data-name="Clock Hands" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 86 86">
     <path
