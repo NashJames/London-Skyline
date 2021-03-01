@@ -1,4 +1,16 @@
-html { overflow: hidden; }
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+// html { overflow: hidden; }
+h1 {
+    z-index: 1;
+    position: absolute;
+    top: -30px;
+    right: 40px;
+    font-family: 'Montserrat';
+    font-size: 6em;
+    letter-spacing: 0.25em;
+    color:chocolate;
+}
 svg {
     position: absolute;
     bottom: 0;
