@@ -1,5 +1,12 @@
+html { overflow: hidden; }
+svg {
+    position: absolute;
+    bottom: 0;
+}
+
 .Cloud {
     position: absolute;
+    left: -250px;
     animation: cloudFloat 30s linear infinite; //30 SECS
 }
 
@@ -14,6 +21,57 @@
     from {transform: translateX(0);}
     to {transform: translateX(2500px);}
 }
+
+
+.NightTime {
+    opacity: 0;
+    animation: DayCycle 40s ease-in-out alternate infinite;
+}
+
+// .DayTime {
+//     animation: DayCycle 40s ease-in-out alternate-reverse infinite;
+// }
+
+@keyframes DayCycle {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+// .Lights { opacity: 0; }
+
+.Lights {
+    opacity: 0;
+    animation: DayCycle2 80s linear infinite;
+}
+
+@keyframes DayCycle2 {
+    0% {opacity: 0;}
+    35% {opacity: 0;}
+    50% {opacity: 1;}
+    65% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+// #Clock_Hands {
+//     max-height: 86px;
+//     max-width: 86px;
+// }
+
+// .CH1, .CH2 {
+//     position: absolute;
+//     animation: clockHandleRotate 6s linear infinite; //6 SECS
+// }
+
+// .CH2 { animation-duration: 60s; } //60 SECS
+
+// @keyframes clockHandleRotate {
+//     from {transform: rotate(0deg, 0, 0);}
+//     to {transform: rotate(360deg, 0, 0);}
+// }
+
+    // transform: translate(686.7612, 414.6018);
+    // from {transform: rotate(0deg, 686.7612px, 414.6018px);}
+    // to {transform: rotate(360deg, 686.7612px, 414.6018px);}
 
 // body {
 //   background-color: rgb(33, 33, 33);
