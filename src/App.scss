@@ -1,19 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-// html { overflow: hidden; }
+html { overflow: hidden; }
 h1 {
     z-index: 1;
     position: absolute;
     top: -30px;
     right: 40px;
     font-family: 'Montserrat';
-    font-size: 6em;
+    font-size: 7vw;
     letter-spacing: 0.25em;
     color:chocolate;
 }
 svg {
     position: absolute;
-    bottom: 0;
+    top: -100px;
 }
 
 .Cloud {
@@ -51,11 +51,9 @@ svg {
 }
 
 @keyframes LightsOn {
-    0% {opacity: 0;}
-    35% {opacity: 0;}
+    0%, 35% {opacity: 0;}
     50% {opacity: 1;}
-    65% {opacity: 0;}
-    100% {opacity: 0;}
+    65%, 100% {opacity: 0;}
 }
 
 // #Clock_Hands {
