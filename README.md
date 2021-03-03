@@ -1,6 +1,6 @@
 # London-Skyline
 
-A simple animated webpage of the London Skyline.
+A simple animated webpage of the London Skyline. For the purpose of learning Vector graphics and animations.
 
 ### Steps:
 - [x] Create SVG using Illustration software
