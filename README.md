@@ -1,4 +1,4 @@
-# London-Skyline
+# :hotel: London-Skyline
 
 A simple animated webpage of the London Skyline. For the purpose of learning illustration graphics and animations.
 
